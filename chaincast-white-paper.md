@@ -12,6 +12,8 @@ Chaincast is not a governance tool, although it can announce very important gove
 
 The stakeholders will have multiple means of consuming the updates, including directly from on-chain, a website, social media, chat and messaging applications, email, SMS and any other convenient medium.
 
+The Chaincast Protocol aspires to be the main hub of information dissimination for all protocols, across all networks and blockchains.
+
 <figure>
 
 ![](https://i.imgur.com/gOUhedF.png)
@@ -19,7 +21,7 @@ The stakeholders will have multiple means of consuming the updates, including di
 <figcaption align = "center">Figure 1 - Chaincast Overview</figcaption>
 </figure>
 
-# 2 Protocol Overview
+# 2 The Chaincast Protocol
 
 Chaincast is a decentralized protocol that facilitates one-way communication between other decentralized protocols and their stakeholders.
 
@@ -102,7 +104,7 @@ Querying for broadcasts is one of the core functions of the Chaincast protocol. 
 - Offset of records.
 - Limit of records.
 
-## 2.2 Fee Schedule
+## 3 Fee Schedule
 
 Fees are the revenue of the protocol and will be used for sustaining Chaincast and be distributed to Chaincast stakeholders. Fees will also be used as a deterrent against spamming broadcasts by protocols. This is an important factor so as to both keep the flows low for end-users and also promote the consumption of the broadcasts.
 
@@ -117,7 +119,7 @@ The purpose of having two tiers of base fees is to have a much lower cost on bro
 
 The exact token values of the Base Fees are beyond the scope of this paper. They will be determined dynamically by [governance][governance] based on market conditions.
 
-### 2.2.1 Fee Escalation and Duration Threshold
+### 3.1 Fee Escalation and Duration Threshold
 
 To discourage protocols from spamming their end-users and consequently abusing the Chaincast protocol, a "Fee Escalation" system is employed. In summary, this system will penalize the protocol that performs more broadcasts than are allowed between the defined time duration of each broadcast.
 
@@ -152,15 +154,40 @@ Bellow find a table of Fee Escalation for up to 5 consequtive broadcasts violati
 | 4                    |          2500 |
 | 5                    |          3600 |
 
-### 2.2.2 Fee Schedule Disclamers
+### 3.2 Fee Schedule Disclamers
 
 As Chaincast discovers the right product market fit, the "revenue model" will be one of the most intense topics of iteration and change. We welcome feedback and suggestions from our partners, clients and protocols who want to use Chaincast so as to create a fair and sustainable service for all parties involved.
 
-## 5. Governance
+### 3.3 Fee Distribution
 
-## 6. Conclusions
+The collected fees will be distributed according to the Tokenomics document and rules and are beyond the scope of this paper.
 
-[fee-schedule]: #2-2-fee-schedule
+## 4. Governance
+
+Governance of the Chaincast protocol will happen in a decentralized manner and will dictate all aspects of the protocol. This paper itself is going to be a "living document" residing on a distributed versioning control system (git) and can be amended as per governance decisions.
+
+In particular, the scope of governance includes:
+
+- The "Goals and Purpose" of the protocol.
+- The Protocol specifications and requirements.
+- Amending the Broadcast Categories.
+- Amending the Fee Schedule and Base Fees.
+- Tokenomics.
+- Delegation of decision making power to committees or partners.
+- Ratifying agreements with partners for protocol and service maintenance.
+- Amending the governance model.
+
+The exact Governance model, processes and procedures will be described in a dedicated Governance Paper.
+
+## 5. Conclusions
+
+The **Chaincast Protocol** helps decentralized protocols inform and alert their stakeholders. It does so in a decentralized, non-custodial manner while allowing end-users to consume the broadcasts in as many ways and through as many media they feel comfortable with.
+
+The core value proposition of the Chaincast protocol is that it allows end users to get the information, updates and alerts they are looking for from one place. As such, it becomes a requirement for the Chaincast Protocol to exist on one network only, serving protocols from all other Layer 1 and Layer 2 networks. Cloning the Chaincast protocol or having multiple instances on alternate networks fundamentaly breaks the value proposition and nullifies the goal and purpose of the protocol.
+
+The Chaincast Protocol aims to be a stepping stone and fundamental block in the proliferation and adoption of Decentralized Protocols.
+
+[fee-schedule]: #3-fee-schedule
 [markdown]: https://www.markdownguide.org/basic-syntax/
 [ipfs]: https://ipfs.tech/
-[governance]: #5-governance
+[governance]: #4-governance
