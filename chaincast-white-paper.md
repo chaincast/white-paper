@@ -6,11 +6,11 @@ This document describes the Chaincast protocol goals, purpose and functionality.
 
 # 1 Introduction
 
-Chaincast's goal is to bridge the communication gap between DeFi and all decentralized protocols with their stakeholders. Chaincast is a one-way, broadcasting protocol that protocols use to broadcast very important updates about them. Stakeholders can then chose from which protocols they want to receive updates and subscribe to these feeds.
+Chaincast's goal is to help all decentralized protocols ("DAOs") keep their stakeholders informed. It is a one-way broadcasting protocol that DAOs use to communicate updates about them. Stakeholders can chose from which protocols they want to receive updates, what kind of updates they want to receive and subscribe to these feeds.
 
-Chaincast is not a governance tool, although it can announce very important governance decisions. Chaincast can act as an emergency broadcast network, directly informing stakeholders about actions they need to take immediately due to a security breach or other urgent reasons.
+Chaincast can be used to broadcast daily briefs, governance upcoming votes and decisions and important updates of a DAO. It can also act as an emergency broadcast network, directly informing stakeholders about actions they need to take immediately due to a security breach or other urgent reasons.
 
-The stakeholders will have multiple means of consuming the updates, including directly from on-chain, a website, social media, chat and messaging applications, email, SMS and any other convenient medium.
+The stakeholders will have multiple means of consuming the updates, like directly from on-chain, a website, social media, chat and messaging applications, email, SMS and any other convenient medium.
 
 <figure>
 
