@@ -2,7 +2,7 @@
 
 This is a pre-draft of how fees can work for Chaincast, only for reference and debate purposes.
 
-## 2.2 Fee Schedule
+## 3 Fee Schedule
 
 Fees are the revenue of the protocol and will be used for sustaining Chaincast and be distributed to Chaincast stakeholders. Fees will also be used as a deterrent against spamming broadcasts by protocols. This is an important factor so as to both keep the flows low for end-users and also promote the consumption of the broadcasts.
 
@@ -17,7 +17,7 @@ The purpose of having two tiers of base fees is to have a much lower cost on bro
 
 The exact token values of the Base Fees are beyond the scope of this paper. They will be determined dynamically by [governance][governance] based on market conditions.
 
-### 2.2.1 Fee Escalation and Duration Threshold
+### 3.1 Fee Escalation and Duration Threshold
 
 To discourage protocols from spamming their end-users and consequently abusing the Chaincast protocol, a "Fee Escalation" system is employed. In summary, this system will penalize the protocol that performs more broadcasts than are allowed between the defined time duration of each broadcast.
 
@@ -52,6 +52,10 @@ Bellow find a table of Fee Escalation for up to 5 consequtive broadcasts violati
 | 4                    |          2500 |
 | 5                    |          3600 |
 
-### 2.2.2 Fee Schedule Disclamers
+### 3.2 Fee Schedule Disclamers
 
 As Chaincast discovers the right product market fit, the "revenue model" will be one of the most intense topics of iteration and change. We welcome feedback and suggestions from our partners, clients and protocols who want to use Chaincast so as to create a fair and sustainable service for all parties involved.
+
+### 3.3 Fee Distribution
+
+The collected fees will be distributed according to the Tokenomics document and rules and are beyond the scope of this paper.
