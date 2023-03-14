@@ -127,12 +127,6 @@ The core value proposition of the Chaincast protocol is that it allows end users
 
 The Chaincast Protocol aims to be a stepping stone and fundamental block in the proliferation and adoption of Decentralized Protocols.
 
-[fee-schedule]: #3-fee-schedule
-
-## 3. Governance
-
-## 4. Conclusions
-
 [markdown]: https://www.markdownguide.org/basic-syntax/
 [ipfs]: https://ipfs.tech/
 [governance]: #4-governance
