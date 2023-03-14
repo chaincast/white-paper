@@ -4,7 +4,7 @@
 
 This document describes the Chaincast protocol goals, purpose and functionality.
 
-# 1 Introduction
+# 1. Introduction
 
 Chaincast's goal is to help all decentralized protocols ("DAOs") keep their stakeholders informed. It is a one-way broadcasting protocol that DAOs use to communicate updates about them. Stakeholders can chose from which protocols they want to receive updates, what kind of updates they want to receive and subscribe to these feeds.
 
@@ -19,46 +19,42 @@ The stakeholders will have multiple means of consuming the updates, like directl
 <figcaption align = "center">Figure 1 - Chaincast Overview</figcaption>
 </figure>
 
-# 2 Protocol Overview
+# 2. Chaincast Protocol Overview
 
-Chaincast is a decentralized protocol that facilitates one-way communication between other decentralized protocols and their stakeholders.
-
-For each broadcast a fee will be collected and redistributed to the Chaincast's stakeholders according to the tokenomics of Chaincast (CAST) which will be released at a different document and are beyond the scope of this paper.
+Chaincast is a decentralized protocol that facilitates one-way communication between other decentralized protocols (DAOs) and their stakeholders.
 
 Broadcasts will be immutable. The contents of the broadcast will be stored on a peer-to-peer hypermedia protocol ( IPFS - [https://ipfs.tech/][ipfs] ), a checksum of the message will be produced and saved on the protocol along with its URL.
 
-The broadcasts will be categorized for finer distribution to interested parties. Different categories will offer varying limits to normal broadcasting fees. For example the "Quarterly Update" category, will allow for 4 base fee broadcasts per year, while the "Emergency" category will only allow 2, beyond those thresholds, the broadcasting fees will increase exponentially.
+The broadcasts will be categorized. Different categories will help stakeholders fine-tune exactly the kind of updates they want to receive so as to minimise the noise and superfluous updates. This will allow the stakeholders to chose from which DAOs and which categories in particular they are interested receiving and consuming broadcasts.
 
-Stakeholders will have the option to chose from which protocols and which categories in particular they are interested receiving and consuming broadcasts.
+In the future, to sustain Chaincast, a fee will be collected for each broadcast. The collected fees will be redistributed to Chaincast's stakeholders according to the tokenomics of Chaincast (CAST) which will be released at a different document and are beyond the scope of this paper.
 
 ## 2.1 Broadcast Core Contract
 
 The **BroadcastCore** contract is responsible for the bulk of the Chaincast's on-chain operations. More specifically it:
 
-- Is responsible for registering new protocols.
+- Is responsible for registering new DAOs.
 - Creates broadcasts.
 - Deprecates broadcasts.
 - Provides querying functions for broadcast consumption.
 
 The BroadcastCore contract will be upgradeable to facilitate easy and rapid protocol iteration and evolution.
 
-### 2.1.1 Registering New Protocols
+### 2.1.1 Registering New DAOs
 
-To ensure the safety and integrity of the Chaincast protocol as well as the partnering protocols, the new protocol registration will employ a verification process. The goal is to ensure that the protocol requesting to register is the official one.
+To ensure the safety and integrity of the Chaincast protocol as well as the partnering DAOs, the DAO registration will employ a verification process. The goal is to ensure that the people who are requesting to register the DAO, are indeed authorized by the DAO for that action.
 
-Upon registration an address or set of addresses will be added to the allowed list to post broadcasts on the behalf of the registering protocol.
+Upon registration an address or set of addresses will be added to the allowed list to post broadcasts on behalf of the registering DAO.
 
 ### 2.1.2 Broadcasting
 
-Broadcasting will require the following inputs:
+Broadcasting, at minimum, will require the following inputs:
 
 - URL to the broadcast message (on IPFS).
 - Checkshum SHA256 of the message.
 - Category selection.
 
-The broadcasting fee will be collected according to the [Fee Schedule][fee-schedule].
-
-Broadcast messages are expected to be in [Markdown format][markdown]. While there is no way for a smart-contract to validate this, it is a convention that must be complied with to promote interoperability of the distribution systems.
+Broadcast messages are expected to be in [Markdown format][markdown]. While there is no way for a smart-contract to validate this, it is a convention that must be complied with, to promote interoperability and normalization of the distribution systems and consuming clients.
 
 ### 2.1.3 Broadcast Deprecation
 
@@ -67,13 +63,11 @@ To account for mistakes or newer updates emerging, a deprecation operation will 
 - Broadcast ID that will get deprecated.
 - The new Broadcast ID.
 
-Deprecation will result in the deprecated message not be visible on normal queries.
-
-Deprecation will collect the base fixed fee.
+Deprecation will result in the deprecated message to not be visible on normal queries.
 
 ### 2.1.4 Broadcasting Categories
 
-Categories define the type of the broadcast, help stakeholders consume the kind of messages they are interested in and allow for custom attributes and behaviours for the broadcasting messages.
+Categories define the type of the broadcast, help stakeholders consume the kind of messages they are interested in and allow for custom attributes and behaviours for the broadcasted messages.
 
 Each category will be described by the following properties:
 
