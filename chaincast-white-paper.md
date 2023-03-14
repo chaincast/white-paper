@@ -75,17 +75,21 @@ Each category will be described by the following properties:
 - The name of the category.
 - Duration Threshold.
 
-The "Duration Threshold" is expressed in days and dictates the days that need to pass from the last broadcast before the Base Fee can apply again. More information about how this works and fees are calculated on the [Fee Schedule][fee-schedule].
+The "Duration Threshold" is expressed in days and provide a rule of thumb to the DAOs as to how often these categories of updates should be broadcasted. They also set expectations to stakeholders as to the frequency and volume of updates they will be receiving.
 
 Chaincast will have the following categories:
 
-|  ID | Name          | Duration Threshold | Notes                                                                        |
-| --: | ------------- | -----------------: | ---------------------------------------------------------------------------- |
-|   1 | Weekly Update |                  7 | Weekly updates for the most engaged stakeholders.                            |
-|   2 | Quarterly     |                 85 | Quarterly update of the project.                                             |
-|   3 | Emergency     |                180 | An emergency has happened that requires immediate attention and / or action. |
-|   4 | Action Needed |                180 | A significant protocol change that requires stakeholder action.              |
-|   5 | Vote Needed   |                180 | A significant governance vote that requires stakeholder participation.       |
+|  ID | Name                    | Duration Threshold | Notes                                                                                    |
+| --: | ----------------------- | -----------------: | ---------------------------------------------------------------------------------------- |
+|   1 | Daily Update            |                  1 | Daily updates for the most engaged stakeholders.                                         |
+|   2 | Weekly Update           |                  7 | Weekly updates for the most engaged stakeholders.                                        |
+|   3 | Quarterly Update        |                 85 | Quarterly update of the project.                                                         |
+|   4 | Vote Needed             |                  7 | A governance vote has been published                                                     |
+|   5 | Significant Vote Needed |                 85 | A significant governance vote that warrants big stakeholder participation.               |
+|   6 | Security                |                180 | A security breach has happened that requires immediate attention and / or action.        |
+|   7 | Action Needed           |                180 | A significant protocol change that requires stakeholder action (a migration or similar). |
+
+Categories are bound to be iterated as feedback and requirements from usage become available.
 
 ### 2.1.5 Querying and consuming
 
