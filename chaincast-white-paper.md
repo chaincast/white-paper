@@ -12,6 +12,8 @@ Chaincast can be used to broadcast daily briefs, governance upcoming votes and d
 
 The stakeholders will have multiple means of consuming the updates, like directly from on-chain, a website, social media, chat and messaging applications, email, SMS and any other convenient medium.
 
+The Chaincast Protocol aspires to be the main hub of information dissimination for all protocols, across all networks and blockchains.
+
 <figure>
 
 ![](https://i.imgur.com/gOUhedF.png)
@@ -102,8 +104,29 @@ Querying for broadcasts is one of the core functions of the Chaincast protocol. 
 
 ## 3. Governance
 
+Governance of the Chaincast protocol will happen in a decentralized manner and will dictate all aspects of the protocol. This paper itself is going to be a "living document" residing on a distributed versioning control system (git) and can be amended as per governance decisions.
+
+In particular, the scope of governance include:
+
+- The "Goals and Purpose" of the protocol.
+- The Protocol specifications and requirements.
+- Amending the Broadcast Categories.
+- Amending the Fee Schedule and Base Fees.
+- Tokenomics.
+- Delegation of decision making power to committees or partners.
+- Ratifying agreements with partners for protocol and service maintenance.
+- Amending the governance model.
+
+The exact Governance model, processes and procedures will be described in a dedicated Governance Paper.
+
 ## 4. Conclusions
+
+The **Chaincast Protocol** helps decentralized protocols inform and alert their stakeholders. It does so in a decentralized, non-custodial manner while allowing end-users to consume the broadcasts in as many ways and through as many media they feel comfortable with.
+
+The core value proposition of the Chaincast protocol is that it allows end users to get the information, updates and alerts they are looking for from one place. As such, it becomes a requirement for the Chaincast Protocol to exist on one network only, serving protocols from all other Layer 1 and Layer 2 networks. Cloning the Chaincast protocol or having multiple instances on alternate networks fundamentaly breaks the value proposition and nullifies the goal and purpose of the protocol.
+
+The Chaincast Protocol aims to be a stepping stone and fundamental block in the proliferation and adoption of Decentralized Protocols.
 
 [markdown]: https://www.markdownguide.org/basic-syntax/
 [ipfs]: https://ipfs.tech/
-[governance]: #5-governance
+[governance]: #4-governance
